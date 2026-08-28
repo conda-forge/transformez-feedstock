@@ -30,15 +30,13 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - fetchez >=0.7.0
+    - fetchez >=0.8.0
     - click
     - numpy >1.24
     - pyproj >3.6.1
     - rasterio >1.4.0
     - libgdal-netcdf
     - libgdal-hdf5
-    - pyogrio >=0.7.0
-    - shapely >=2.0.0
     - scipy
 
 tests:
