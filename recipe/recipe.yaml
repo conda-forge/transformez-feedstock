@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: transformez
-  version: "0.5.7"
+  version: "0.6.0"
   python_min: "3.12"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: a55c90a46d1b5e4525a6785f4a33161a179c3aece452038e9d12d9d6f9e9c74d
+  sha256: a0aa9f40cdd0648fd99c41146835421cf34a88c09a553e66937c67d421b353d8
 
 build:
   number: 0
@@ -30,15 +30,13 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - fetchez >=0.7.0
+    - fetchez >=0.8.0
     - click
     - numpy >1.24
     - pyproj >3.6.1
     - rasterio >1.4.0
     - libgdal-netcdf
     - libgdal-hdf5
-    - pyogrio >=0.7.0
-    - shapely >=2.0.0
     - scipy
 
 tests:
