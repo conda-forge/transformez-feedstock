@@ -30,7 +30,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - fetchez >=0.8.0
+    - fetchez >=0.9.1
     - click
     - numpy >1.24
     - pyproj >3.6.1
